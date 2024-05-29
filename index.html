@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/Users/miarahruadil/Desktop/RUADIL, IBARRA.   FORGET ME NOT ARTSTATION/E2638066-0C83-45F4-BF9D-A54B73AD40E1_waifu2x_photo_noise2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fcf8f3;
+        }
+        
+        header {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgba(143, 116, 64, 0.8);
+            color: #e9d792;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #faf8f4;
+            text-decoration: none;
+        }
+
+        .hero {
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            padding: 50px 20px;
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: #fae8d0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .hero .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(32, 44, 62, 0.952);
+            border-radius: 5px;
+        }
+
+        .gallery .artworks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .artwork {
+            background-color: #320909;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+        }
+
+        .artwork img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .artwork h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .artwork p {
+            margin: 5px 0;
+        }
+
+        .artwork .cta {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #aea18e;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .faq .question {
+            background-color: rgba(80, 107, 171, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .faq .question h3 {
+            margin: 0;
+        }
+
+        .faq .question p {
+            margin: 5px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>FORGET ME NOT</h1>
+        <h2>an ArtStation</h2>
+        <p>Discover and purchase stunning artworks.</p>
+        <a href="#gallery" class="cta">Browse Gallery</a>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="artworks">
+            <div class="artwork">
+                <img src="/Users/miarahruadil/Desktop/RUADIL, IBARRA.   FORGET ME NOT ARTSTATION/50917914bd86bcbc0d9f31700a212c19.jpg" alt="Artwork 1">
+                <h3>The Woman</h3>
+                <p>Critical Eye</p>
+                <b>$500</b>
+                <p class="description">A mystical woman staring at the window with a red wine in her hands as if she's waiting for something.</p>
+                <a href="#product-1" class="cta">View Details</a>
+            </div>
+            <div class="artwork">
+                <img src="/Users/miarahruadil/Desktop/RUADIL, IBARRA.   FORGET ME NOT ARTSTATION/d5e3347ad7c0af77d26856a773d37f4e.jpg" alt="Artwork 2">
+                <h3>Gynarchy</h3>
+                <p>Mary</p>
+                <b>$2,000</b>
+                <p class="description">Philosophical feminism is a loosely connected group of approaches in different philosophical fields that highlights how gender shapes traditional philosophical problems and concepts it examines how traditional philosophy reflects and reinforces discrimination against women and defends theories and concepts of philosophy that assume women's equality.</p>
+                <a href="#product-2" class="cta">View Details</a>
+            </div>
+            <div class="artwork">
+                <img src="/Users/miarahruadil/Desktop/RUADIL, IBARRA.   FORGET ME NOT ARTSTATION/299af2f6268fb8412dd6ebc087efb4bc.jpg" alt="Artwork 2">
+                <h3>The girl with a pearl earring</h3>
+                <p>Johannes Vermeer</p>
+                <b>$30,000,000</b>
+                <p class="description">Girl with a Pearl Earring is Vermeer's most famous painting. It is not a portrait, but a 'tronie' – a painting of an imaginary figure. Tronies depict a certain type or character; in this case a girl in exotic dress, wearing an oriental turban and an improbably large pearl in her ear.</p>
+                <a href="#product-3" class="cta">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About the Artist</h2>
+        <p>Information about the artist and the story behind the artworks.</p>
+        <p>Johannes Vermeer was a Dutch Baroque Period painter who specialized in domestic interior scenes of middle-class life. He is considered one of the greatest painters of the Dutch Golden Age. During his lifetime, he was a moderately successful provincial genre painter, recognized in Delft and The Hague. </p>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <p>Articles on art-related topics, artist interviews, and industry news.</p>
+        
+        <h2>Art Aficionado: Your Portal to the World of Art</h2>
+        <p>Welcome to Art Aficionado, your go-to blog for everything art! Whether you’re an artist, an art lover, or just curious about the art world, we bring you the latest industry news, insightful artist interviews, and thought-provoking articles on various art-related topics.</p>
+
+        <h3>Latest Articles</h3>
+
+        <article>
+            <h3>The Evolution of Digital Art: From Pixels to NFTs</h3>
+            <p><strong>Date:</strong> May 28, 2024</p>
+            <p><strong>Author:</strong> Jane Doe</p>
+            <p>Digital art has transformed from simple pixel art in the 1980s to the complex, blockchain-verified world of NFTs today. In this article, we explore the journey of digital art, its impact on traditional art forms, and what the future holds.</p>
+            <a href="#">Read more…</a>
+        </article>
+
+        <article>
+            <h3>Behind the Canvas: An Interview with Sarah Johnson</h3>
+            <p><strong>Date:</strong> May 20, 2024</p>
+            <p><strong>Author:</strong> John Smith</p>
+            <p>Sarah Johnson, a contemporary artist known for her vibrant abstract paintings, sits down with us to discuss her creative process, the challenges she faces as an artist, and her upcoming gallery exhibition.</p>
+            <a href="#">Read more…</a>
+        </article>
+
+        <article>
+            <h3>The Art of Curating: An Insider’s Guide</h3>
+            <p><strong>Date:</strong> May 15, 2024</p>
+            <p><strong>Author:</strong> Emily Clarke</p>
+            <p>Curating an art exhibition is both an art and a science. This article delves into the intricate process of selecting artworks, designing the layout, and creating an engaging experience for visitors.</p>
+            <a href="#">Read more…</a>
+        </article>
+
+        <article>
+            <h3>Street Art: From Vandalism to High Art</h3>
+            <p><strong>Date:</strong> May 10, 2024</p>
+            <p><strong>Author:</strong> Michael Brown</p>
+            <p>Once considered mere vandalism, street art has now gained recognition as a legitimate art form. We trace the origins of street art, its rise to fame, and its influence on contemporary culture.</p>
+            <a href="#">Read more…</a>
+        </article>
+
+        <h3>Featured Artist of the Month</h3>
+
+        <article>
+            <h3>Maria Gonzalez: The Fusion of Tradition and Modernity</h3>
+            <p>Maria Gonzalez’s work bridges the gap between traditional art techniques and modern themes. Her use of bold colors and intricate patterns reflects her cultural heritage while addressing contemporary social issues.</p>
+            <a href="#">Discover more about Maria Gonzalez…</a>
+        </article>
+
+        <h3>Industry News</h3>
+
+        <article>
+            <h3>Art Basel 2024: Highlights and Trends</h3>
+            <p><strong>Date:</strong> May 28, 2024</p>
+            <p><strong>Author:</strong> Art Aficionado Team</p>
+            <p>Art Basel 2024 showcased some of the most innovative and thought-provoking artworks from around the world. Here are the highlights and emerging trends from this year’s fair.</p>
+            <a href="#">Read more…</a>
+        </article>
+
+        <article>
+            <h3>The Rise of Virtual Art Galleries</h3>
+            <p><strong>Date:</strong> May 25, 2024</p>
+            <p><strong>Author:</strong> Art Aficionado Team</p>
+            <p>As technology advances, virtual art galleries are becoming more popular. This article explores how virtual galleries are changing the way we experience art and what it means for the future of art exhibitions.</p>
+            <a href="#">Read more…</a>
+        </article>
+
+        <h3>Join Our Community</h3>
+        <p>Stay updated with the latest in the art world by subscribing to our newsletter. Connect with fellow art enthusiasts, participate in discussions, and get exclusive access to events and interviews.</p>
+        <a href="#" class="cta">Subscribe Now</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>FAQ</h2>
+        <p>Answers to common questions about purchasing, shipping, and returns.</p>
+        
+        <div class="question">
+            <h3>How do I purchase an artwork?</h3>
+            <p>Select the artwork you wish to purchase and click on 'View Details'. Then, follow the instructions to complete your purchase.</p>
+        </div>
+        
+        <div class="question">
+            <h3>What payment methods are accepted?</h3>
+            <p>We accept major credit cards, PayPal, and bank transfers.</p>
+        </div>
+        
+        <div class="question">
+            <h3>How is shipping calculated?</h3>
+            <p>Shipping costs are calculated based on the size, weight, and destination of the artwork. The total cost will be displayed at checkout.</p>
+        </div>
+        
+        <div class="question">
+            <h3>How long does shipping take?</h3>
+            <p>Shipping times vary depending on the destination. Typically, it takes 5-10 business days for domestic orders and 10-20 business days for international orders.</p>
+        </div>
+        
+        <div class="question">
+            <h3>Can I track my order?</h3>
+            <p>Yes, you will receive a tracking number once your order has been shipped.</p>
+        </div>
+        
+        <div class="question">
+            <h3>What is the return policy?</h3>
+            <p>We accept returns within 30 days of purchase. The artwork must be returned in its original condition. Please contact us for return instructions.</p>
+        </div>
+        
+        <div class="question">
+            <h3>What if the artwork arrives damaged?</h3>
+            <p>If your artwork arrives damaged, please contact us immediately with photos of the damage. We will arrange for a replacement or refund.</p>
+        </div>
+        
+        <div class="question">
+            <h3>How can I contact customer support?</h3>
+            <p>You can contact our customer support team through the contact form on our website or by emailing support@artgallery.com.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Forget me not artstation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
